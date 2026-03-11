@@ -270,7 +270,7 @@ class MPC_Controller:
             cost += error_terminal.T @ self.P @ error_terminal
 
         self.opti.minimize(cost)
-        self.opti.solver("ipopt")
+        self.opti.solver("ipopt",{"print_time":0},{"print_level":0})
 
         # Store
         self.X = X
