@@ -55,11 +55,7 @@ from Metrics import *
 
 The PCC robot is represented using curvature coordinates
 
-$q = \begin{bmatrix}
-q_1\\
-q_2\\
-q_3
-\end{bmatrix}$
+$q = [q_1\; q_2 \; q_3]$
 
 where each curvature variable represents one PCC section.
 
@@ -98,25 +94,11 @@ $h(q,\dot q)$
 
 ### Gravity Vector
 
-\[
-G(q)
-\]
+$G(q)$
 
 The resulting dynamic model is
 
-\[
-B(q)\ddot q
-+
-h(q,\dot q)
-+
-D\dot q
-+
-G(q)
-+
-Kq
-=
-\tau
-\]
+$B(q)\ddot{q}+h(q,\dot{q})+D\dot{q}+G(q)+Kq=\tau$
 
 which is converted into the state-space form
 
