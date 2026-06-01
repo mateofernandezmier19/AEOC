@@ -55,14 +55,11 @@ from Metrics import *
 
 The PCC robot is represented using curvature coordinates
 
-\[
-q =
-\begin{bmatrix}
+$q = \begin{bmatrix}
 q_1\\
 q_2\\
 q_3
-\end{bmatrix}
-\]
+\end{bmatrix}$
 
 where each curvature variable represents one PCC section.
 
@@ -78,8 +75,8 @@ The default parameters are:
 
 - Number of sections: 3
 - Section length: 0.063 m
-- Elastic stiffness matrix \(K\)
-- Damping matrix \(D\)
+- Elastic stiffness matrix $K$
+- Damping matrix $D$
 
 ---
 
@@ -93,15 +90,11 @@ This method generates:
 
 ### Inertia Matrix
 
-\[
-B(q)
-\]
+$B(q)$
 
 ### Coriolis and Centrifugal Terms
 
-\[
-h(q,\dot q)
-\]
+$h(q,\dot q)$
 
 ### Gravity Vector
 
